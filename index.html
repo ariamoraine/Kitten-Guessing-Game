@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Guessing Game</title>
+
+    <!-- Bootstrap and CSS here-->
+    <style>
+      .center {
+        text-align: center;
+      }
+
+      ul {
+          list-style: none;
+          padding: 0;
+      }
+
+      img {
+          display: inline;
+          width: 200px;
+          height: 100px;
+      }
+
+      #footer {
+          width: 100%;
+          border-top: solid 2px black;
+          background-color: white;
+          position: fixed;
+          bottom: 0;
+      }
+    </style>
+
+  </head>
+  <body>
+
+      <div id='app'>
+
+        <div id='headers'>
+          <h1>Guess How Many Kittens Game!!</h1>
+          <h2>The cutest guessing game around</h2>
+          <h3>Take your best guess from 1 to 100 kittens!</h3>
+        </div>
+
+        <div id='main'>
+          <div id='input-parent'>
+            <!-- Player's guess input, and submit button -->
+            <form> How many kittens am I thinking of? <input type="text" name="playerguess" value="1 to 100">
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+
+          <div id='guesses'>
+            <!-- unordered list of guesses -->
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+
+          <div id="menu-btns">
+            <!-- reset and hint buttons -->
+            <button type="button">I GIVES UP</button>
+            <button type="button">I CAN HAS HINTZ</button>
+          </div>
+        </div>
+      </div>
+
+
+
+    <div id='footer'>
+        <div>
+          <div class=''>
+            <img src='fa-logo@2x.png'></img>
+          </div>
+
+          <div class=''>
+            <h4>Project by Aria Moraine</h4>
+          </div>
+
+          <div class=''>
+            <img src='grace_hopper_academy.png'></img>
+          </div>
+
+
+        </div>
+    </div>
+
+  </body>
+</html>
