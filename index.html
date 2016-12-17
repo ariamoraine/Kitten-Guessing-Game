@@ -2,6 +2,8 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
     <title>Guessing Game</title>
 
     <!-- Bootstrap and CSS here-->
@@ -9,8 +11,8 @@
   </head>
   <body>
 
-      <div class="center" id='app'>
-
+      <div class="center container" id='app'>
+        <div class="background-squ">
         <div id='headers'>
           <h1>Guess How Many Kittens Game!!</h1>
           <h2>The cutest guessing game around</h2>
@@ -18,49 +20,48 @@
         </div>
 
         <div id='main'>
-          <div id='input-parent'>
+          <div id='parent-input' class="center">
             <!-- Player's guess input, and submit button -->
-            <form> How many kittens am I thinking of? <input type="text" name="playerguess" value="1 to 100">
-              <input type="submit" value="Submit">
-            </form>
+              <input type="text" id="player-input" name="playerguess" placeholder="#"> 
+              <input type="submit" id="submit" value="GO!">
+            
           </div>
 
           <div id='guesses'>
             <!-- unordered list of guesses -->
-            <ul>
-              <li class="guess">.</li>
-              <li class="guess">.</li>
-              <li class="guess">.</li>
-              <li class="guess">.</li>
-              <li class="guess">.</li>
+            <ul >
+              <li class="guess">-</li>
+              <li class="guess">-</li>
+              <li class="guess">-</li>
+              <li class="guess">-</li>
+              <li class="guess">-</li>
             </ul>
           </div>
 
           <div id="menu-btns">
             <!-- reset and hint buttons -->
-            <button type="button">I GIVES UP</button>
-            <button type="button">I CAN HAS HINTZ</button>
+            <button type="button" class="btn btn-lg">I GIVES UP</button>
+            <button type="button" class="btn btn-lg">I CAN HAS HINTZ</button>
           </div>
         </div>
+      </div>
       </div>
 
 
 
-    <div id='footer'>
-        <div>
-          <div class=''>
+    <div class="container-fluid" id='footer'>
+        <div class="row">
+          <div class='col-sm-4'>
             <img src='fa-logo@2x.png'></img>
           </div>
 
-          <div class=''>
+          <div class='col-sm-4'>
             <h4>Project by Aria Moraine</h4>
           </div>
 
-          <div class=''>
+          <div class='col-sm-4'>
             <img src='grace_hopper_academy.png'></img>
           </div>
-
-
         </div>
     </div>
 
